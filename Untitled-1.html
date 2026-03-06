@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f4f6f8; color: #333; }
+    header { background: #1e293b; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 36px; }
+    header p { margin-top: 10px; font-size: 18px; }
+    nav { background: #0f172a; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #38bdf8; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { margin-bottom: 20px; color: #1e293b; }
+    .about, .skills, .projects, .contact { background: #fff; padding: 30px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .skills ul { display: flex; flex-wrap: wrap; list-style: none; }
+    .skills li { background: #e2e8f0; margin: 8px; padding: 10px 15px; border-radius: 20px; }
+    .project-card { background: #f8fafc; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+    button { background: #1e293b; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #334155; }
+    footer { text-align: center; padding: 20px; background: #1e293b; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Suman Thakur</h1>
+    <p>Web Developer | Student</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a student and aspiring web developer. I enjoy creating websites using HTML, CSS, and JavaScript. I am always eager to learn new technologies and improve my skills.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Hall Booking Management System</h3>
+      <p>A Java-based application for managing hall bookings, payments, and customer records.</p>
+    </div>
+    <div class="project-card">
+      <h3>Web-Based Learning System</h3>
+      <p>A web application developed using HTML, CSS, JavaScript, and PHP.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: example@email.com</p>
+    <p>Phone: +977-XXXXXXXXX</p>
+    <button onclick="showMessage()">Say Hello</button>
+  </section>
+
+  <footer>
+    <p>© 2026 Suman Thakur. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Thank you for visiting my portfolio! 😊");
+    }
+  </script>
+
+</body>
+</html>
